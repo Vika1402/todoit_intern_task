@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Hide scrollbar */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Webkit browsers (Chrome, Safari) */
+}
+
+/* Enable smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  transition: all;
+}
