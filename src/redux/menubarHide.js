@@ -2,13 +2,13 @@
 export const initialState = {
   menuHide: false,
   inputHide: true,
-  darkMode: false, // New state for dark mode
+  darkMode: true,
 };
 
 // Action Types
 export const TOGGLE_MENU = "TOGGLE_MENU";
 export const TOGGLE_INPUT = "TOGGLE_INPUT";
-export const TOGGLE_DARK_MODE = "TOGGLE_DARK_MODE"; // New action type for dark mode
+export const TOGGLE_DARK_MODE = "TOGGLE_DARK_MODE";
 
 // Action Creators
 export const hidemenufn = () => {
