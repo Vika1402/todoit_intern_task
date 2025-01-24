@@ -31,11 +31,11 @@ function Home() {
   const [hide, setHide] = useState(true);
   const darkModeRedux = useSelector((state) => state.menu.darkMode);
   return (
-    <div className="flex justify-between  mt-20 h-[100vh] ">
+    <div className="flex justify-between  mt-20   ">
       <div
         className={
           darkModeRedux
-            ? "sticky bg-green-100 mt-10  flex-col space-y-6 hidden md:block"
+            ? "sticky bg-green-100 max-w-72 mt-10  flex-col space-y-6 hidden md:block"
             : "sticky top-0 left-0  bg-gray-800  mt-10 flex-col space-y-6 hidden md:block"
         }
       >
@@ -53,11 +53,11 @@ function Home() {
         <SlidBarCard1 />
         <SlidBarCard2 />
 
-        <div
+        <div           
           className={
             darkModeRedux
-              ? "mx-3 bg-white text-gray-800 rounded-md"
-              : "mx-6 w-72 bg-black text-white  rounded-md"
+              ? "mx-6 bg-white text-gray-800 rounded-md"
+              : "mx-6 w-72  bg-black text-white rounded-md"
           }
         >
           <ul className="flex flex-col p-3 space-y-4 text-sm">

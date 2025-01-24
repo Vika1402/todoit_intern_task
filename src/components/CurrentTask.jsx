@@ -14,7 +14,9 @@ function CurrentTask() {
 
   return (
     <ul className="flex flex-col mx-4 mt-5 gap-y-3">
-      <span className="text-2xl  font-semibold py-2">Your Today Task</span>
+      <span className=" text-xl lg:text-2xl  font-semibold py-2">
+        Your Today Task
+      </span>
 
       {taskData?.length > 0 ? (
         taskData
@@ -29,7 +31,7 @@ function CurrentTask() {
                     : "flex justify-between bg-black/40 py-4 px-4 shadow-sm"
                 }
               >
-                <span className="flex items-center text-xl  space-x-4">
+                <span className="flex items-center text-lg lg:text-xl  space-x-4">
                   <span
                     onClick={() =>
                       hideDelete ? setHideDelete(false) : setHideDelete(true)

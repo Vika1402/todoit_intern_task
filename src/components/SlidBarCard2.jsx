@@ -8,7 +8,7 @@ function SlidBarCard2() {
     <div
       className={
         darkModeRedux
-          ? "mx-3 bg-white py-4 rounded-md"
+          ? "mx-6 bg-white py-4 rounded-md"
           : "mx-6 w-72 bg-black py-4 rounded-md"
       }
     >
