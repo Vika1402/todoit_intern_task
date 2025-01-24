@@ -31,22 +31,22 @@ function Home() {
   const [hide, setHide] = useState(true);
   const darkModeRedux = useSelector((state) => state.menu.darkMode);
   return (
-    <div className="flex justify-between h-[100vh] mt-20">
+    <div className="flex justify-between  mt-20">
       <div
         className={
           darkModeRedux
-            ? "sticky bg-green-100  mt-34 flex-col space-y-3.5 hidden md:block"
-            : "sticky bg-gray-800  mt-34 flex-col space-y-3.5 hidden md:block"
+            ? "sticky bg-green-100 mt-10  flex-col space-y-3 hidden md:block"
+            : "sticky top-0 left-0  bg-gray-800  mt-10 flex-col space-y-3 hidden md:block"
         }
       >
-        <div className="rounded-full absolute top-[-60px] left-25  w-full justify-center items-center">
+        <div className="rounded-full absolute -top-10 left-25  w-full justify-center items-center">
           <img
-            className=" w-30 rounded-full object-cover border-2 border-gray-200"
+            className=" w-25 rounded-full object-cover border-2 border-gray-200"
             src="https://img.freepik.com/free-psd/contact-icon-illustration-isolated_23-2151903337.jpg?ga=GA1.1.2024936588.1734079803&semt=ais_hybrid "
             alt=""
           />
         </div>
-        <div className="mt-18 w-full text-center font-semiold text-lg">
+        <div className="mt-16 w-full text-center uppercase font-semiold text-lg">
           Hey, mr.vikas
         </div>
 
@@ -56,8 +56,8 @@ function Home() {
         <div
           className={
             darkModeRedux
-              ? "mx-3 bg-white text-gray-800  py-8 rounded-md"
-              : "mx-3 bg-black text-white py-8 rounded-md"
+              ? "mx-3 bg-white text-gray-800 rounded-md"
+              : "mx-6 w-72 bg-black text-white  rounded-md"
           }
         >
           <ul className="flex flex-col p-3 space-y-4 text-sm">
@@ -78,7 +78,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="h-full mt-8 transition-all duration-500 w-full">
+      <div className=" mt-8 transition-all duration-500 w-full h-[100vh]">
         <span
           className={
             darkModeRedux

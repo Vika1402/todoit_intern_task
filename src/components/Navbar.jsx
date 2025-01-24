@@ -16,8 +16,8 @@ function Navbar() {
     <div
       className={
         darkModeRedux
-          ? "flex justify-between items-center py-6 fixed top-0 right-0 left-0 px-12 z-20 bg-white"
-          : "flex  justify-between items-center py-6 fixed top-0 right-0 px-12 left-0 z-20 bg-gray-800 text-white"
+          ? "flex justify-between items-center py-2  fixed top-0 right-0 left-0 px-12 z-20 bg-white"
+          : "flex  justify-between top-0 items-center py-2 fixed  right-0 px-12 left-0 z-20 bg-gray-800 text-white"
       }
     >
       {/* left side */}

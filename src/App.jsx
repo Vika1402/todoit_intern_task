@@ -10,7 +10,7 @@ function App() {
       className={
         darkModeRedux
           ? " bg-white text-gray-900"
-          : " bg-gray-800 text-white w-full h-full overflow-hidden "
+          : " bg-gray-800 text-white  overflow-hidden "
       }
     >
       {" "}

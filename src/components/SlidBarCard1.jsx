@@ -12,8 +12,8 @@ function SlidBarCard1() {
     <div
       className={
         darkModeRedux
-          ? "mx-3 bg-white py-4 rounded-md "
-          : "mx-3 bg-black text-white py-4 rounded-md "
+          ? "mx-6 bg-white py-4 rounded-md "
+          : "mx-6 w-72 bg-black text-white py-4 rounded-md "
       }
     >
       <ul className="flex flex-col p-3 space-y-4 text-lg">
