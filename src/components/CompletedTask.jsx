@@ -11,7 +11,7 @@ function CompletedTask() {
 
   const dispatch = useDispatch();
   return (
-    <ul className="flex flex-col mx-4 mt-5 gap-y-3 h-60 md:h-0">
+    <ul className="flex flex-col mx-4 mt-5 gap-y-3 h-[100vh] md:h-0">
       <span className=" text-xl xl:text-2xl  font-semibold py-2">
         Completed task
       </span>
