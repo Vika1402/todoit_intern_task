@@ -31,12 +31,12 @@ function Home() {
   const [hide, setHide] = useState(true);
   const darkModeRedux = useSelector((state) => state.menu.darkMode);
   return (
-    <div className="flex justify-between  mt-20">
+    <div className="flex justify-between  mt-20 h-[100vh] ">
       <div
         className={
           darkModeRedux
-            ? "sticky bg-green-100 mt-10  flex-col space-y-3 hidden md:block"
-            : "sticky top-0 left-0  bg-gray-800  mt-10 flex-col space-y-3 hidden md:block"
+            ? "sticky bg-green-100 mt-10  flex-col space-y-6 hidden md:block"
+            : "sticky top-0 left-0  bg-gray-800  mt-10 flex-col space-y-6 hidden md:block"
         }
       >
         <div className="rounded-full absolute -top-10 left-25  w-full justify-center items-center">
@@ -78,7 +78,7 @@ function Home() {
         </div>
       </div>
 
-      <div className=" mt-8 transition-all duration-500 w-full h-[100vh]">
+      <div className=" mt-8 transition-all duration-500 w-full h-full ">
         <span
           className={
             darkModeRedux
